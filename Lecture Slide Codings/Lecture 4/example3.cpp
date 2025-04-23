@@ -26,14 +26,22 @@ int main()
         {
             cout << "You are both in love and eligible for marriage." << endl;
         } 
-        else 
+        else if (person2 == 'n' || person2 == 'N')
         {
             cout << "Person 2 is not in love with Person 1. You are not eligible for marriage based on mutual love." << endl;
         }
+        else
+        {
+            cout << "Invalid Input" << endl;
+        }
     } 
-    else
+    else if (person1 == 'n' || person1 == 'N')
     {
         cout << "Person 1 is not in love with Person 2. You are not eligible for marriage based on mutual love." << endl;
+    }
+    else
+    {
+        cout << "Invalid Input" << endl;
     }
 
     return 0;
